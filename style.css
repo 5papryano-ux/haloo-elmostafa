@@ -1,0 +1,158 @@
+
+
+
+:root{
+  --main:#2f607c;
+  --bg:#f3edee;
+  --accent:#3b1da8;
+  --btn:#25d366;
+  --text:#080e2c;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Tahoma', Arial, sans-serif;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* ===== Header ===== */
+header{
+  background: var(--main);
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  border-radius: 0 0 20px 20px;
+}
+
+header h1{
+  font-size: 28px;
+  margin-bottom: 5px;
+  color:#f4faf7;
+
+}
+
+header p{
+  font-size: 14px;
+  opacity: .9;
+}
+
+/* ===== Titles ===== */
+.section-title{
+  margin: 20px 15px 10px;
+  color: #D91A77
+
+  font-size: 20px;
+}
+
+/* ===== Products ===== */
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+  gap: 15px;
+  padding: 0 15px;
+}
+
+.product{
+  background: #F6BDB5
+
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+  text-align: center;
+}
+
+.product h3{
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.price{
+  color: var(--accent);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ===== Quantity ===== */
+.qty-box{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.qty-box button{
+  background:#1E88E5;
+
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.qty-box span{
+  min-width: 20px;
+  font-weight: bold;
+}
+
+/* ===== Cart ===== */
+.cart-info,
+.total{
+  margin: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ===== Order Form ===== */
+.order-form{
+  background: #fff;
+  margin: 20px 15px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+.order-form h2{
+  margin-bottom: 10px;
+  color: var(--main);
+}
+
+.order-form input,
+.order-form select{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* ===== WhatsApp ===== */
+.whatsapp{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: var(--btn);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+/* ===== Footer ===== */
+footer{
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 80px;
+  font-size: 14px;
+  color: #666;
+}
